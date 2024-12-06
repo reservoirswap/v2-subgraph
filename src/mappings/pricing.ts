@@ -11,7 +11,7 @@ const USDC_WETH_PAIR = '0xfbc528db9e9d50d2006116d04898dadad431bb9f'
 export function getEthPriceInUSD(): BigDecimal {
   let usdcPair = Pair.load(USDC_WETH_PAIR) // usdc is token0
   if (usdcPair !== null) {
-    return usdcPair.token1Price
+    return usdcPair.token0Price
   } else {
     return ZERO_BD
   }
