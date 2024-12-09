@@ -6,11 +6,11 @@ schema:
 dataSources:
   - kind: ethereum/contract
     name: Factory
-    network: abstract-testnet
+    network: cyeth
     source:
-      address: '0xcD87b21B627cB2d695FBc2101cf64F8007F25E07'
+      address: '0x8AdDa31FE63696Ac64DED7D0Ea208102b1358c44'
       abi: Factory
-      startBlock: 356580
+      startBlock: 9610056
     mapping:
       kind: ethereum/events
       apiVersion: 0.0.7
@@ -34,7 +34,7 @@ dataSources:
 templates:
   - kind: ethereum/contract
     name: Pair
-    network: abstract-testnet
+    network: cyeth
     source:
       abi: Pair
     mapping:
