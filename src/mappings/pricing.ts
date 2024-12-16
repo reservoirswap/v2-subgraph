@@ -5,8 +5,8 @@ import { Bundle, Pair, Token } from '../types/schema'
 import { ADDRESS_ZERO, factoryContract, ONE_BD, UNTRACKED_PAIRS, ZERO_BD } from './helpers'
 
 const WETH_ADDRESS = '0x4200000000000000000000000000000000000006'
-const USDC_ADDRESS = '0xdb7DD8B00EdC5778Fe00B2408bf35C7c054f8BBe'
-const USDC_WETH_PAIR = '0x5B348AdEd5cD0F453278E7050b771AE0ceF13727'
+const USDC_ADDRESS = '0xdb7dd8b00edc5778fe00b2408bf35c7c054f8bbe'
+const USDC_WETH_PAIR = '0x5b348aded5cd0f453278e7050b771ae0cef13727'
 
 export function getEthPriceInUSD(): BigDecimal {
   let usdcPair = Pair.load(USDC_WETH_PAIR) // usdc is token0

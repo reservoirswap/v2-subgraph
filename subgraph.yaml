@@ -8,7 +8,7 @@ dataSources:
     name: Factory
     network: shape
     source:
-      address: '0xb411eAF2f2070822B26E372E3Ea63c5060BA45E6'
+      address: '0xb411eaf2f2070822b26e372e3ea63c5060ba45e6'
       abi: Factory
       startBlock: 6177331
     mapping:
