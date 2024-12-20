@@ -6,11 +6,11 @@ schema:
 dataSources:
   - kind: ethereum/contract
     name: Factory
-    network: abstract-testnet
+    network: ink
     source:
-      address: '0xcD87b21B627cB2d695FBc2101cf64F8007F25E07'
+      address: '0xfe57a6ba1951f69ae2ed4abe23e0f095df500c04'
       abi: Factory
-      startBlock: 356580
+      startBlock: 524511
     mapping:
       kind: ethereum/events
       apiVersion: 0.0.7
@@ -34,7 +34,7 @@ dataSources:
 templates:
   - kind: ethereum/contract
     name: Pair
-    network: abstract-testnet
+    network: ink
     source:
       abi: Pair
     mapping:
