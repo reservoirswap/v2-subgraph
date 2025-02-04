@@ -1,0 +1,44 @@
+{
+    "abstract-testnet": {
+      "Factory": {
+          "address": "0x0ddff327ddf7fe838e3e63d02001ef23ad1ede8e",
+          "startBlock": 356724
+        }
+    },
+    "zero": {
+      "Factory": {
+        "address": "0x1B4427e212475B12e62f0f142b8AfEf3BC18B559",
+        "startBlock": 727
+      }
+    },
+    "cyeth": {
+      "Factory": {
+        "address": "0x8AdDa31FE63696Ac64DED7D0Ea208102b1358c44",
+        "startBlock": 9567951
+      }
+    },
+    "shape": {
+      "Factory": {
+        "address": "0xb411eaf2f2070822b26e372e3ea63c5060ba45e6",
+        "startBlock": 6022152
+      }
+    },
+    "ink": {
+      "Factory": {
+        "address": "0xfe57a6ba1951f69ae2ed4abe23e0f095df500c04",
+        "startBlock": 284117
+      }
+    },
+    "abstract": {
+      "Factory": {
+        "address": "0x566d7510dee58360a64c9827257cf6d0dc43985e",
+        "startBlock": 5617
+      }
+    },
+    "anime-testnet": {
+      "Factory": {
+        "address": "0x69f2888491eA07BB10936aA110A5E0481122efd3",
+        "startBlock": 1651650
+      }
+    }
+  }

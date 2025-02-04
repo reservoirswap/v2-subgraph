@@ -13,10 +13,21 @@ import {
   ZERO_BD,
   ZERO_BI,
 } from './helpers'
+import { getSubgraphConfig, SubgraphConfig } from '../utils/chains'
 
-export function handleNewPair(event: PairCreated): void {
+export function handleNewPair(event: PairCreated, subgraphConfig: SubgraphConfig = getSubgraphConfig()): void {
   // load factory (create if first exchange)
-  let factory = UniswapFactory.load(FACTORY_ADDRESS)
+
+  const factoryAddress = subgraphConfig.factoryAddress
+  const pairsToSkip = subgraphConfig.pairsToSkip
+
+  let factory = UniswapFactory.load(factoryAddress)
+
+
+  if (pairsToSkip.includes(event.params.pair.toHexString())) {
+    return
+  }
+
   if (factory === null) {
     factory = new UniswapFactory(FACTORY_ADDRESS)
     factory.pairCount = 0

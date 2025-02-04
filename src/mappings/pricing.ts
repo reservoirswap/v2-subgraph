@@ -8,10 +8,14 @@ const WETH_ADDRESS = '0x3439153eb7af838ad19d56e1571fbd09333c2809'
 const USDC_ADDRESS = '0x84a71ccd554cc1b02749b35d22f684cc8ec987e1'
 const USDC_WETH_PAIR = '0x22e77ffe8d3ee3a161f657f235807caf891f5638'
 
-export function getEthPriceInUSD(): BigDecimal {
-  let usdcPair = Pair.load(USDC_WETH_PAIR) // usdc is token0
-  if (usdcPair !== null) {
-    return usdcPair.token1Price
+
+export function getEthPriceInUSD(
+  stablecoinWrappedNativePoolAddress: string,
+  stablecoinIsToken0: boolean,
+): BigDecimal {
+  const stablecoinWrappedNativePool = Pair.load(stablecoinWrappedNativePoolAddress)
+  if (stablecoinWrappedNativePool !== null) {
+    return stablecoinIsToken0 ? stablecoinWrappedNativePool.token0Price : stablecoinWrappedNativePool.token1Price
   } else {
     return ZERO_BD
   }
