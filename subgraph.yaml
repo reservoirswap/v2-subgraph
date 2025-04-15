@@ -6,11 +6,11 @@ schema:
 dataSources:
   - kind: ethereum/contract
     name: Factory
-    network: mode
+    network: anime
     source:
-      address: '0x79ABbfdf20fc6DD0c51693bF9A481F7351A70Fd2'
       abi: Factory
-      startBlock: 19222272
+      address: "0x69D30A49fcbaB7142d604635772B7Eef958aE0bd"
+      startBlock: 57516
     mapping:
       kind: ethereum/events
       apiVersion: 0.0.7
@@ -34,7 +34,7 @@ dataSources:
 templates:
   - kind: ethereum/contract
     name: Pair
-    network: mode
+    network: anime
     source:
       abi: Pair
     mapping:
