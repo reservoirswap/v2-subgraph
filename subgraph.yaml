@@ -9,7 +9,7 @@ dataSources:
     network: anime
     source:
       abi: Factory
-      address: "0x69D30A49fcbaB7142d604635772B7Eef958aE0bd"
+      address: "0xeCf9288395797Da137f663a7DD0F0CDF918776F8"
       startBlock: 57516
     mapping:
       kind: ethereum/events
